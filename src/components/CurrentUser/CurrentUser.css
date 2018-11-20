@@ -1,0 +1,17 @@
+.CurrentUser{
+    border: 2px solid #02977e;
+    width: 50%;
+    margin-left: 350px;
+}
+input{
+    width: 30%;
+    height: 20px;
+    justify-content: space-around;
+}
+button{
+    background:  #0090a3;
+    font-weight: bold;
+    font-size: 15px;    
+    color: white;
+
+}
