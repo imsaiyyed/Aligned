@@ -99,6 +99,7 @@ class App extends Component {
       this.setState({
         Users:users
       });
+      alert("User created successfully..");
       console.log(json)
 
     })
@@ -134,7 +135,8 @@ class App extends Component {
       this.setState({
         Users:users
       });
-      
+      alert("User updated successfully..");
+
     })
   }
   deleteUser=(event)=>
@@ -157,6 +159,8 @@ class App extends Component {
         currentUser:null,
         showUser:false
       });
+      alert("User deleted successfully..");
+
     }).catch(reason=>console.log(reason))
   }
   showThisUser=(id)=>
