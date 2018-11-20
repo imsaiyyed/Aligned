@@ -185,21 +185,34 @@ class App extends Component {
 
     let jsxSource=null;
 
-    jsxSource=this.state.Users.map(user=>{
+    jsxSource=(
+    <div className="Group">{
+    this.state.Users.map(user=>{
       return <User name={user.name} key={user.id} click={this.showThisUser.bind(this,user.id)} />
-    });
+    })}
+    </div>)
+  
     return (
       <div className="App">
-    
+      <div className="AllDiv1">
       <h3>All Users</h3>
-      {jsxSource}<br/>
+      <div className="Scroll">
+        {jsxSource}<br/>
+      </div>
+      </div>
+      <div className="AllDiv">
+
       {
         this.state.showUser?
           <CurrentUser saveChanges={this.updateUser} deleteUser={this.deleteUser} changed={this.updated} user={{...this.state.currentUser}}/>  
         :
         <label>Select user</label>
       }
+      </div>
+       <div className="AllDiv">
       <AddUser addUser={this.addUser} create={this.creation}/>
+
+      </div>
       </div>
     );
   }

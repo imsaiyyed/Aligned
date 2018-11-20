@@ -1,10 +1,9 @@
 .CurrentUser{
     border: 2px solid #02977e;
-    width: 50%;
-    margin-left: 350px;
+    margin-top: 100px;
 }
 input{
-    width: 30%;
+    width: 70%;
     height: 20px;
     justify-content: space-around;
 }

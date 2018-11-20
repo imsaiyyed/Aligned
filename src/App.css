@@ -1,4 +1,22 @@
 .App {
-  text-align: center;
-  border: 1px solid #007e49;
+  display:inline-flex;
+width: 100%;
+border: 1px solid #007e49;
+text-align: center;
+}
+.AllDiv1{
+  width: 25%;
+}
+.AllDiv{
+  width: 33%;
+  margin-left: 10px;
+}
+
+.Scroll{
+  height: 550px;
+  overflow-y: scroll;
+}
+label{
+
+  margin-top: 100px;
 }
